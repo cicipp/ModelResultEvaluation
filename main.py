@@ -30,4 +30,5 @@ print('Main process running....')
 
 insert_file(df, distinct_columns, indice_limit)
 
-print('lala')
+if thread.is_alive():
+    thread.join()
